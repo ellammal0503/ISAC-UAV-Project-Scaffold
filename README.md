@@ -5,8 +5,8 @@
 ---
 
 
-## 📌 Description  
-This repository contains the implementation of ** AI-based ISAC (Integrated Sensing and Communication) framework for UAV sensing and parameter estimation**, developed as part of the **Samsung EnnovateX 2025 AI Challenge**.  
+##  Description  
+This repository contains the implementation of **AI-based ISAC (Integrated Sensing and Communication) framework for UAV sensing and parameter estimation**, developed as part of the **Samsung EnnovateX 2025 AI Challenge**.  
 
 
 ---
@@ -24,7 +24,7 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 
 ---
-## 📂 Project Structure
+## Project Structure
 ISAC-UAV/
 │── docs/ # Technical documentation
 │── src/ # Source code
@@ -36,17 +36,16 @@ ISAC-UAV/
 
 
 
-## 🔧 Installation
+## Installation
 ```bash
 git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
 cd ISAC-UAV-Project-Scaffold
 pip install -e .
 
-## 🔧 Usage
+## Usage
 ./run.sh
 
-
-📑 Documentation
+## Documentation
 See docs/ for detailed technical write-ups:
 Architecture
 Channel model
@@ -55,7 +54,9 @@ Signal processing
 AI models
 Datasets
 Experiments
-🛠 Features
+
+
+## Features
 3GPP TR 38.901 §7.9 UAV scenario simulation
 Range-Doppler processing + CFAR detection
 MUSIC DoA estimation
@@ -63,7 +64,7 @@ Feature extraction for ML/DL
 Baseline + Deep models
 Plotting & metrics utilities
 
-📜 License
+## License
 MIT License – see LICENSE.
 
 ---

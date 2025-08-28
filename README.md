@@ -1,7 +1,29 @@
-# ISAC-UAV 🚀
+# Samsung EnnovateX 2025 AI Challenge Submission  
 
-Estimation of UAV parameters (range, velocity, direction of arrival) using **Monostatic Integrated Sensing and Communication (ISAC)** based on 3GPP TR 38.901 (Rel-19) §7.9 channel models.
+**Project Title**: Estimation of UAV parameters (range, velocity, direction of arrival) using **Monostatic Integrated Sensing and Communication (ISAC)** based on 3GPP TR 38.901 (Rel-19) §7.9 channel models.  
 
+---
+
+
+## 📌 Description  
+This repository contains the implementation of ** AI-based ISAC (Integrated Sensing and Communication) framework for UAV sensing and parameter estimation**, developed as part of the **Samsung EnnovateX 2025 AI Challenge**.  
+
+
+---
+
+# Samsung EnnovateX 2025 AI Challenge Submission  
+
+
+**Problem Statement** - Problem Statement #7
+Estimation of UAV Parameters Using Monostatic Sensing in ISAC Scenario
+Develop an AI-based solution using monostatic integrated sensing and communication (ISAC) to estimate UAV range, velocity, and direction of arrival, leveraging advanced signal processing and machine learning. Utilize the channel model based on 3GPP TR 38.901-j00 (Rel-19) Section 7.9 for ISAC applications. Participants are expected to design models that extract these parameters from ISAC signals under the specified channel conditions.  
+
+**Team Name** - Solo Team 
+**Team Members** - Karthick Kumarasamy  
+**Demo Video Link** -  to be done 
+
+
+---
 ## 📂 Project Structure
 ISAC-UAV/
 │── docs/ # Technical documentation

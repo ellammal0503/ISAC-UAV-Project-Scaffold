@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: isac-uav
+Version: 0.1.0
+Summary: ISAC-UAV: Estimation of UAV Parameters Using Monostatic Sensing in ISAC Scenario
+Author: Your Name
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

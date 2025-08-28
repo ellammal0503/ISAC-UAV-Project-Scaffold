@@ -1,0 +1,69 @@
+"""
+Direction-of-Arrival (DoA) estimation using MUSIC algorithm.
+"""
+
+import numpy as np
+from numpy.linalg import eig
+def music_doa(rx_signal: np.ndarray, num_sources: int = 2, n_antennas: int = 8) -> np.ndarray:
+    """Estimate direction of arrival (DoA) using MUSIC algorithm."""
+
+    # Ensure rx_signal is 2D: (n_antennas, n_samples)
+    rx_signal = np.atleast_2d(rx_signal)
+    if rx_signal.shape[0] != n_antennas:
+        # reshape assuming single antenna stream → distribute into antennas
+        rx_signal = np.tile(rx_signal, (n_antennas, 1))
+
+    # Estimate covariance matrix
+    R = np.dot(rx_signal, rx_signal.conj().T) / rx_signal.shape[1]
+
+    # Eigen-decomposition
+    U, S, Vh = np.linalg.svd(R)
+    noise_subspace = U[:, num_sources:]
+
+    # MUSIC spectrum
+    angles = np.linspace(-90, 90, 181)
+    spectrum = []
+    for ang in angles:
+        a = np.exp(-1j * np.pi * np.arange(n_antennas) * np.sin(np.deg2rad(ang)))
+        spectrum.append(1 / np.linalg.norm(noise_subspace.conj().T @ a))
+
+    doa_est = angles[np.argmax(np.abs(spectrum))]
+    return doa_est
+
+#old
+'''
+#doa_estimation refer main.py
+def music_doa(cov_matrix, num_sources, n_antennas, scan_angles=np.linspace(-90, 90, 181)):
+    """
+    MUSIC DoA estimation.
+    
+    Args:
+        cov_matrix (np.ndarray): covariance matrix (n_antennas x n_antennas)
+        num_sources (int): number of UAVs/targets
+        n_antennas (int): array size
+        scan_angles (np.ndarray): grid of angles in degrees
+    
+    Returns:
+        tuple: (angles, spectrum)
+    """
+    # Eigen decomposition
+    eigvals, eigvecs = eig(cov_matrix)
+    idx = eigvals.argsort()[::-1]
+    eigvecs = eigvecs[:, idx]
+    
+    # Noise subspace
+    En = eigvecs[:, num_sources:]
+    
+    # Steering vectors
+    spectrum = []
+    for theta in scan_angles:
+        sv = np.exp(-1j * np.pi * np.arange(n_antennas) * np.sin(np.deg2rad(theta)))
+        sv = sv[:, None]
+        ps = 1 / np.linalg.norm(En.conj().T @ sv)**2
+        spectrum.append(ps)
+    
+    spectrum = np.array(spectrum)
+    est_angles = scan_angles[np.argsort(spectrum)[-num_sources:]]
+    
+    return est_angles, spectrum
+'''

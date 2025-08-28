@@ -24,7 +24,7 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 
 ---
-## Project Structure
+**Project Structure**
 ISAC-UAV/
 │── docs/ # Technical documentation
 │── src/ # Source code
@@ -36,7 +36,7 @@ ISAC-UAV/
 
 
 
-## Installation
+**Installation**
 ```bash
 git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
 cd ISAC-UAV-Project-Scaffold
@@ -45,7 +45,7 @@ pip install -e .
 ## Usage
 ./run.sh
 
-## Documentation
+**Documentation**
 See docs/ for detailed technical write-ups:
 Architecture
 Channel model

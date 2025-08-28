@@ -16,8 +16,8 @@ ISAC-UAV/
 
 ## 🔧 Installation
 ```bash
-git clone https://github.com/yourusername/ISAC-UAV.git
-cd ISAC-UAV
+git clone [https://github.com/yourusername/ISAC-UAV.git](https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git)
+cd ISAC-UAV-Project-Scaffold
 pip install -e .
 
 ## 🔧 Usage
@@ -45,10 +45,6 @@ Plotting & metrics utilities
 MIT License – see LICENSE.
 
 ---
-
-✅ With this, your repo is **fully bootstrapped**: code, docs, and runnable setup.  
-
-Do you want me to now create the **sample workflow in `src/main.py`** that ties simulation → processing → ML together, so evaluators can run and see an end-to-end demo
 
 #python3 -m venv venv
 #source venv/bin/activate

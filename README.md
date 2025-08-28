@@ -75,3 +75,54 @@ pip install -e .
 chmod +x run.sh
 ./run.sh
 
+
+[INFO] Generated UAV scenario: [{'pos': (-145.84954113878, -178.08206464864807, 149.59066279986354), 'vel': (28.97654438306837, 5.555555555555555), 'size': (0.3, 0.4, 0.2), 'los': False}, {'pos': (420.2457855892241, 402.1074406308873, 157.36340785162017), 'vel': (27.092613058565828, 11.11111111111111), 'size': (1.6, 1.5, 0.7), 'los': True}]
+[INFO] Channel initialized
+[INFO] Echo signal generated
+[INFO] Detections: [[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+[DEBUG] Patched rx_signal shape: (8, 128)
+[INFO] Extracted 64 features
+
+[INFO] Training MLP model...
+Epoch 1/5, Loss: 0.6836, Acc: 0.6250
+Epoch 2/5, Loss: 0.4238, Acc: 1.0000
+Epoch 3/5, Loss: 0.2723, Acc: 1.0000
+Epoch 4/5, Loss: 0.2006, Acc: 1.0000
+Epoch 5/5, Loss: 0.1769, Acc: 1.0000
+[RESULT] MLP Accuracy: 1.00
+[INFO] Saved MLP model -> results/models/MLP.pth
+
+[INFO] Training CNN model...
+Epoch 1/5, Loss: 0.5587, Acc: 0.6875
+Epoch 2/5, Loss: 0.5169, Acc: 0.6875
+Epoch 3/5, Loss: 0.4823, Acc: 0.6875
+Epoch 4/5, Loss: 0.4459, Acc: 0.6875
+Epoch 5/5, Loss: 0.4202, Acc: 0.6875
+[RESULT] CNN Accuracy: 0.69
+[INFO] Saved CNN model -> results/models/CNN.pth
+
+[INFO] Training RNN model...
+Epoch 1/5, Loss: 0.5462, Acc: 0.9062
+Epoch 2/5, Loss: 0.3303, Acc: 1.0000
+Epoch 3/5, Loss: 0.2491, Acc: 1.0000
+Epoch 4/5, Loss: 0.2207, Acc: 1.0000
+Epoch 5/5, Loss: 0.2073, Acc: 1.0000
+[RESULT] RNN Accuracy: 1.00
+[INFO] Saved RNN model -> results/models/RNN.pth
+
+[INFO] Training Transformer model...
+Epoch 1/5, Loss: 0.2593, Acc: 0.7969
+Epoch 2/5, Loss: 0.0000, Acc: 1.0000
+Epoch 3/5, Loss: 0.0000, Acc: 1.0000
+Epoch 4/5, Loss: 0.0000, Acc: 1.0000
+Epoch 5/5, Loss: 0.0000, Acc: 1.0000
+[RESULT] Transformer Accuracy: 1.00
+[INFO] Saved Transformer model -> results/models/Transformer.pth
+[INFO] Saved comparison plot -> results/plots/model_comparison.png
+

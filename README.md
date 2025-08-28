@@ -23,7 +23,7 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 ---
 **Project Structure**
--ISAC-UAV-Project-Scaffold/
+- ISAC-UAV-Project-Scaffold/
 - │── docs/ # Technical documentation
 - │── src/ # Source code
 - │── requirements.txt # Dependencies

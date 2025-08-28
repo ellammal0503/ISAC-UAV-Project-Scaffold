@@ -25,14 +25,14 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 ---
 **Project Structure**
-ISAC-UAV/
-│── docs/ # Technical documentation
-│── src/ # Source code
-│── requirements.txt # Dependencies
-│── setup.py # Install script
-│── run.sh # Run pipeline
-│── LICENSE # License file
-│── README.md # This file
+- ISAC-UAV/
+- │── docs/ # Technical documentation
+- │── src/ # Source code
+- │── requirements.txt # Dependencies
+- │── setup.py # Install script
+- │── run.sh # Run pipeline
+- │── LICENSE # License file
+- │── README.md # This file
 
 
 
@@ -45,7 +45,7 @@ pip install -e .
 ## Usage
 ./run.sh
 
-**Documentation**
+## Documentation
 See docs/ for detailed technical write-ups:
 Architecture
 Channel model

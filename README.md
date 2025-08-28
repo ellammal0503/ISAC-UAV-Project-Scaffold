@@ -11,8 +11,6 @@ This repository contains the implementation of **AI-based ISAC (Integrated Sensi
 
 ---
 
-# Samsung EnnovateX 2025 AI Challenge Submission  
-
 
 **Problem Statement** - Problem Statement #7
 Estimation of UAV Parameters Using Monostatic Sensing in ISAC Scenario

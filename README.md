@@ -25,37 +25,38 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 ---
 **Project Structure**
-ISAC-UAV/
-- │── docs/ # Technical documentation
-- │── src/ # Source code
-- │── requirements.txt # Dependencies
-- │── setup.py # Install script
-- │── run.sh # Run pipeline
-- │── LICENSE # License file
-- │── README.md # This file
+- ISAC-UAV/
+-- │── docs/ # Technical documentation
+-- │── src/ # Source code
+-- │── requirements.txt # Dependencies
+-- │── setup.py # Install script
+-- │── run.sh # Run pipeline
+-- │── LICENSE # License file
+-- │── README.md # This file
 
 
 ## Documentation
-See docs/ for detailed technical write-ups:
-Architecture
-Channel model
-Simulation
-Signal processing
-AI models
-Datasets
-Experiments
+- See docs/ for detailed technical write-ups:
+- Architecture
+- Channel model
+- Simulation
+- Signal processing
+- AI models
+- Datasets
+- Experiments
 
 
 ## Features
-3GPP TR 38.901 §7.9 UAV scenario simulation
-Range-Doppler processing + CFAR detection
-MUSIC DoA estimation
-Feature extraction for ML/DL
-Baseline + Deep models
-Plotting & metrics utilities
+- 3GPP TR 38.901 §7.9 UAV scenario simulation
+- Range-Doppler processing + CFAR detection
+- MUSIC DoA estimation
+- Feature extraction for ML/DL
+- Baseline + Deep models
+- Plotting & metrics utilities
 
 ## License
-MIT License – see LICENSE.
+- MIT License
+- – see LICENSE.
 
 ---
 

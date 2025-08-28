@@ -55,20 +55,23 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 - Plotting & metrics utilities
 
 ## License
-- MIT License
-- – see LICENSE.
+- MIT License – see LICENSE.
 
 ---
 
-#python3 -m venv venv
-#source venv/bin/activate
+- #python3 -m venv venv
+- #source venv/bin/activate
 
 **Installation**
 ```bash
+
 git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
 cd ISAC-UAV-Project-Scaffold
+
 pip install -e .
-#chmod +x run.sh
+
+
 ## Usage
+chmod +x run.sh
 ./run.sh
 

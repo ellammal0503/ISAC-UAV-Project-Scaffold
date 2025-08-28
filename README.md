@@ -16,7 +16,7 @@ ISAC-UAV/
 
 ## 🔧 Installation
 ```bash
-git clone [https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git]
+git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
 cd ISAC-UAV-Project-Scaffold
 pip install -e .
 

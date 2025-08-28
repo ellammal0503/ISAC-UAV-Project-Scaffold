@@ -25,7 +25,7 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 ---
 **Project Structure**
-- ISAC-UAV/
+ISAC-UAV/
 - │── docs/ # Technical documentation
 - │── src/ # Source code
 - │── requirements.txt # Dependencies
@@ -34,16 +34,6 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 - │── LICENSE # License file
 - │── README.md # This file
 
-
-
-**Installation**
-```bash
-git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
-cd ISAC-UAV-Project-Scaffold
-pip install -e .
-
-## Usage
-./run.sh
 
 ## Documentation
 See docs/ for detailed technical write-ups:
@@ -71,3 +61,13 @@ MIT License – see LICENSE.
 
 #python3 -m venv venv
 #source venv/bin/activate
+
+**Installation**
+```bash
+git clone https://github.com/ellammal0503/ISAC-UAV-Project-Scaffold.git
+cd ISAC-UAV-Project-Scaffold
+pip install -e .
+#chmod +x run.sh
+## Usage
+./run.sh
+

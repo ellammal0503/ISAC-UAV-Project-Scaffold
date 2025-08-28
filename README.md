@@ -18,7 +18,7 @@ Develop an AI-based solution using monostatic integrated sensing and communicati
 
 **Team Name** - Solo Team 
 **Team Members** - Karthick Kumarasamy  
-**Demo Video Link** -  to be done 
+**Demo Video Link** -  https://youtu.be/YeozUlzkHDk
 
 
 ---

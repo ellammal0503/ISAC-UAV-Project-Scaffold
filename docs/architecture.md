@@ -1,5 +1,8 @@
 # System Architecture
 
+<img width="1536" height="1024" alt="system architecture diagram" src="https://github.com/user-attachments/assets/19eefac4-d92a-4fb2-8758-59cf7e4b2d8b" />
+
+
 ## Components
 1. **Scenario Simulation (src/sim/)**
    - UAV distribution in 3D (per 3GPP Table 7.9.1-1)
